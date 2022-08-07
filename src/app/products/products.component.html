@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row card-group">
+    <div class="col-3" *ngFor="let product of products">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.Name | uppercase }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            {{ product.Quantity }} Items
+          </h6>
+          <p class="card-text">{{ product.Price | currency }}</p>
+        </div>
+      </div>
+      <div style="width: 15px;"></div>
+    </div>
+  </div>
+</div>
